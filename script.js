@@ -50,9 +50,10 @@ $("#two").mouseover(function(){
     $("#gum").css("opacity", "1");
 
     var lastScrollTop = 0;
+
     var numberRotate = 20;
     var addingRotate = .2;
-    var addingTranslate = 2;
+    var addingTranslate = 4;
     var numberTranslate = -400;
 
     var numberRotateS = -30;

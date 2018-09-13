@@ -34,6 +34,7 @@ h1 {
 }
 .introduce {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
+    position: relative;
 }
 .introduce p {
     text-align: center;
@@ -78,6 +79,7 @@ h1 {
     background-image: url(img/nature.jpg);
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
 }
 #one .box {
     background-color: #ebebeb;
@@ -107,7 +109,9 @@ h1 {
     transition: all 3s ease;
 }
 
-
+#two {
+    position: relative;
+}
 #two h3 {
     position: relative;
     text-align: center;
@@ -256,7 +260,7 @@ h1 {
     width: 40%;
     position: absolute;
     right: -600px;
-    top: 600px;
+    top: -200px;
     transform: rotate(90deg);
     transition: all 1.4s ease;
     -webkit-filter: drop-shadow(30px 30px 40px black);
@@ -266,7 +270,7 @@ h1 {
     width: 50%;
     position: absolute;
     left: -400px;
-    top: 1400px;
+    top: 500px;
     transition: left 2s ease;
     -webkit-filter: drop-shadow(30px 30px 40px black);
     filter: drop-shadow(30px 30px 40px black);
@@ -276,7 +280,7 @@ h1 {
     width: 70%;
     position: absolute;
     right: -400px;
-    top: 1000px;
+    top: 300px;
     transition: right 2s ease;
     -webkit-filter: drop-shadow(30px 30px 40px black);
     filter: drop-shadow(30px 30px 40px black);
@@ -285,7 +289,7 @@ h1 {
 #hand {
     width: 45%;
     position: absolute;
-    top: 400px;
+    top: -400px;
     right: 0;
     -webkit-filter: drop-shadow(30px 30px 40px black);
     filter: drop-shadow(30px 30px 100px black);
@@ -296,13 +300,13 @@ h1 {
     position: absolute;
     width: 40%;
     left: -700px;
-    top: 1400px;
+    top: -300px;
     transition: left 2s ease;
 }
 #mint {
     position: absolute;
     width: 45%;
     right: -800px;
-    top: 2500px;
+    top: 800px;
     transition: right 3s ease;
 }
