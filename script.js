@@ -40,6 +40,8 @@ $(".box").mouseover(function(){
     $("#hand").css("transform", "translateX(0) rotate(0)")
 })
 
+var testing = 0;
+
 $("#two").mouseover(function(){
     $("#two > h3").css("opacity", "1");
     $("#liane2").css("left", "-300px");
@@ -48,6 +50,8 @@ $("#two").mouseover(function(){
     $("#spotify").css("opacity", "1");
     $("#shampoing").css("opacity", "1");
     $("#gum").css("opacity", "1");
+
+    if(testing == 0) {
 
     var lastScrollTop = 0;
 
@@ -70,6 +74,10 @@ $("#two").mouseover(function(){
     var addingRotateG = .8;
     var addingTranslateG = 1;
     var numberTranslateG = 300;
+
+    testing = testing+1;
+
+    }
 
     window.addEventListener("scroll", function(){
         var st = window.pageYOffset || document.documentElement.scrollTop;

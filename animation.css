@@ -21,11 +21,15 @@
 @keyframes breath {
     0%{
         letter-spacing: .1em;
+        font-size: 4.8em;
     }
     60%{
         letter-spacing: .15em;
+        font-size: 5em;
     }
     100%{
         letter-spacing: .1em;
+        font-size: 4.8em;
+
     }
 }

@@ -135,8 +135,6 @@ h1 {
     position: absolute;
     right: 100px!important;
     z-index: -4;
-    -webkit-filter: drop-shadow(10px 10px 70px black);
-    filter: drop-shadow(10px 10px 70px black);
     opacity: 0;
     transition: opacity 2s ease;   
 }
@@ -146,8 +144,6 @@ h1 {
     transform: translateY(400px) rotate(50deg);
     left: 400px!important;
     z-index: -4;
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-    filter: drop-shadow(10px 10px 10px black);
     opacity: 0;
     transition: opacity 3s ease;
 }
@@ -157,13 +153,12 @@ h1 {
     position: absolute;
     right: 300px!important;
     z-index: -4;
-    -webkit-filter: drop-shadow(10px 10px 40px black);
-    filter: drop-shadow(10px 10px 40px black);
     opacity: 0;
     transition: opacity 4s ease;   
 }
 #three {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
+    height: 150vh;
 }
 #three h3 {
     font-family: 'Poiret One';
@@ -179,6 +174,14 @@ h1 {
 }
 #three .flexbox {
     width: calc(100%/2);
+}
+#three .text p {
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: justify;
 }
 #three .img {
     position: relative;
@@ -202,8 +205,6 @@ h1 {
     width: 91px;
     height: 99px;
     z-index: 2;
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-    filter: drop-shadow(10px 10px 10px black);
     transition: transform 1s ease-in-out;
           
 }
@@ -253,8 +254,6 @@ h1 {
     right: -200px;
     top: -300px;
     animation: enterLiane 2s ease 1;
-    -webkit-filter: drop-shadow(10px 10px 70px black);
-    filter: drop-shadow(10px 10px 70px black);
 }
 #leave2 {
     width: 40%;
@@ -263,8 +262,6 @@ h1 {
     top: -200px;
     transform: rotate(90deg);
     transition: all 1.4s ease;
-    -webkit-filter: drop-shadow(30px 30px 40px black);
-    filter: drop-shadow(30px 30px 40px black);
 }
 #leave3 {
     width: 50%;
@@ -272,8 +269,6 @@ h1 {
     left: -400px;
     top: 500px;
     transition: left 2s ease;
-    -webkit-filter: drop-shadow(30px 30px 40px black);
-    filter: drop-shadow(30px 30px 40px black);
     z-index: 10;
 }
 #leave4 {
@@ -282,8 +277,6 @@ h1 {
     right: -400px;
     top: 300px;
     transition: right 2s ease;
-    -webkit-filter: drop-shadow(30px 30px 40px black);
-    filter: drop-shadow(30px 30px 40px black);
     z-index: 10;
 }
 #hand {
@@ -291,8 +284,6 @@ h1 {
     position: absolute;
     top: -400px;
     right: 0;
-    -webkit-filter: drop-shadow(30px 30px 40px black);
-    filter: drop-shadow(30px 30px 100px black);
     transform: translateX(650px) rotate(-20deg);
     transition: transform 2s ease;
 }
