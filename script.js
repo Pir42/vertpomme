@@ -26,7 +26,7 @@ $(function() {
     
 })(jQuery);
 
-$("#one").mouseover(function(){
+$(".introduce").mouseleave(function(){
     $("#leave2").css("right", "-400px");
     $("#leave2").css("transform", "rotate(0deg)");
     $("#leave3").css("left", "-130px");
@@ -42,7 +42,8 @@ $(".box").mouseover(function(){
 
 var testing = 0;
 
-$("#two").mouseover(function(){
+$("#one").mouseleave(function(){
+
     $("#two > h3").css("opacity", "1");
     $("#liane2").css("left", "-300px");
     $("#mint").css("right", "-400px");
