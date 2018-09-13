@@ -42,7 +42,7 @@ $(".box").mouseover(function(){
 
 var testing = 0;
 
-$("#one").mouseleave(function(){
+$("#two").hover(function(){
 
     $("#two > h3").css("opacity", "1");
     $("#liane2").css("left", "-300px");
@@ -131,4 +131,5 @@ $("#one").mouseleave(function(){
 $("#three").mouseover(function(){
     $("#three > h3").css("opacity", "1");
     $('.img').css("opacity", "1");
+    $('.text > p').css("opacity", "1");
 })
