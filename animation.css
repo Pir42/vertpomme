@@ -1,0 +1,31 @@
+@keyframes letterSpacing {
+    from{letter-spacing: 1em};
+    to{letter-spacing: .3em};
+}
+@keyframes down {
+    from{transform: translateY(-30px); opacity: 0;}
+    to{transform: translateY(0px); opacity: 1;}
+}
+@keyframes rotate {
+    from{transform: rotate(-15deg);}
+    to{transform: rotate(10deg);}
+}
+@keyframes enterLeave {
+    from{transform: translateX(-400px);}
+    from{transform: translateX(-300px);}
+}
+@keyframes enterLiane {
+    from{transform: translateX(200px);}
+    from{transform: translateX(100px);}    
+}
+@keyframes breath {
+    0%{
+        letter-spacing: .1em;
+    }
+    60%{
+        letter-spacing: .2em;
+    }
+    100%{
+        letter-spacing: .1em;
+    }
+}

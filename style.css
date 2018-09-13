@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Gloss And Bloom';
+    src: url('./font/GlossAndBloom.woff2') format('woff2'),
+        url('./font/GlossAndBloom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'Montserrat';
+    background-color: #e5f9bd;
+    color: #525050;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 2em 0;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    padding-top: 1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+    animation: letterSpacing 2.5s 1 ease; 
+}
+.introduce {
+    background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
+}
+.introduce p {
+    text-align: center;
+    margin: 4em 0;
+    font-weight: 600;
+    animation: down 1.5s 1 ease;
+}
+.introduce a {
+    display: block;
+    position: relative;
+    color: #525050;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4em;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: letter-spacing .3s ease;
+}
+.introduce a:hover {
+    letter-spacing: .4em;
+    transition: letter-spacing .5s ease;
+}
+#pommeImg {
+    width: 10em;
+    margin: auto;
+    display: block;
+    transform: rotate(10deg);
+    transition: transform 1s ease;
+    animation: rotate 2s ease 1;
+}
+.pommeBox {
+    width: 100%;
+    margin-top: 6em;
+    
+}
+#pommeImg:hover {
+    transform: rotate(20deg);
+    transition: transform 1s ease;
+}
+#one {
+    background-image: url(img/nature.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#one .box {
+    background-color: #ebebeb;
+    margin: 2em auto;
+    height: 90%;
+    width: 90%;
+}
+#one h3 {
+    font-family: 'Gloss And Bloom';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6em;
+    margin-left: .5em;
+    margin-top: 0;
+    transform: rotate(-10deg);
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+#one p {
+    width: 40%;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10em 0 0 9em;
+    line-height: 1.5em;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 3s ease;
+}
+#two {
+    background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
+}
+#two h3 {
+    font-family: 'EB Garamond';
+    font-weight: lighter;
+    font-size: 5em;
+    text-align: center;
+    animation: breath 3s infinite;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#two .flex {
+    display: flex;
+}
+#two .flexbox {
+    width: calc(100%/2);
+}
+#two .img {
+    position: relative;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+#two .tab {
+    background-image: url("img/magrittTab.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 580px;
+    height: 743px;
+    z-index: 1;
+      
+}
+#two .apple {
+    position: absolute;
+    left: 245px;
+    top: 131px;
+    width: 91px;
+    height: 99px;
+    z-index: 2;
+    -webkit-filter: drop-shadow(10px 10px 70px black);
+    filter: drop-shadow(10px 10px 10px black);
+    transition: transform 1s ease-in-out;
+          
+}
+
+.tab:hover + .apple, .apple:hover {
+    transform: translateY(200px) rotate(40deg);
+    transition: transform 1.5s ease-in-out;
+}
+.img .text {
+    font-size: .5em;
+    position: absolute;
+    left: 270px;
+    top: 170px;
+    text-align: center;
+    font-weight: 600;
+    z-index: 0;
+}
+#leave1 {
+    width: 35%;
+    position: absolute;
+    left: -300px;
+    top: -1090px;
+    animation: enterLeave 2s ease 1;
+
+}
+#liane {
+    position: absolute;
+    width: 40%;
+    right: -200px;
+    top: -300px;
+    animation: enterLiane 2s ease 1;
+    -webkit-filter: drop-shadow(10px 10px 70px black);
+    filter: drop-shadow(10px 10px 70px black);
+}
+#leave2 {
+    width: 40%;
+    position: absolute;
+    right: -600px;
+    top: 600px;
+    transform: rotate(90deg);
+    transition: all 1.4s ease;
+    -webkit-filter: drop-shadow(30px 30px 40px black);
+    filter: drop-shadow(30px 30px 40px black);
+}
+#leave3 {
+    width: 50%;
+    position: absolute;
+    left: -400px;
+    top: 1400px;
+    transition: left 2s ease;
+    -webkit-filter: drop-shadow(30px 30px 40px black);
+    filter: drop-shadow(30px 30px 40px black);
+    z-index: 10;
+}
+#leave4 {
+    width: 70%;
+    position: absolute;
+    right: -400px;
+    top: 1000px;
+    transition: right 2s ease;
+    -webkit-filter: drop-shadow(30px 30px 40px black);
+    filter: drop-shadow(30px 30px 40px black);
+    z-index: 10;
+}
