@@ -37,6 +37,7 @@ $(".box").mouseenter(function(){
     $(".box > h3").css("opacity", "1");
     $(".box > p").css("opacity", "1");
     $(".box > p").css("transform", "translateY(0px)");
+    $("#hand").css("transform", "translateX(0) rotate(0)")
 })
 
 $("#two").mouseenter(function(){

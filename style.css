@@ -210,3 +210,13 @@ h1 {
     filter: drop-shadow(30px 30px 40px black);
     z-index: 10;
 }
+#hand {
+    width: 45%;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    -webkit-filter: drop-shadow(30px 30px 40px black);
+    filter: drop-shadow(30px 30px 100px black);
+    transform: translateX(650px) rotate(-20deg);
+    transition: transform 2s ease;
+}
