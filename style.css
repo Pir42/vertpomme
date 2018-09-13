@@ -246,6 +246,7 @@ h1 {
     left: -300px;
     top: -890px;
     animation: enterLeave 2s ease 1;
+    z-index: 4;
 
 }
 #liane {

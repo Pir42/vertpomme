@@ -105,16 +105,16 @@ $("#one").mouseleave(function(){
         } 
         else {
             numberRotate = numberRotate - addingRotate;
-            numberTranslate = numberTranslate - addingTranslate*.2;
+            numberTranslate = numberTranslate - addingTranslate*.7;
 
             numberRotateS = numberRotateS - addingRotateS;
-            numberTranslateS = numberTranslateS - addingTranslateS*.3;
+            numberTranslateS = numberTranslateS - addingTranslateS*.7;
 
             numberRotateSH = numberRotateSH + addingRotateSH;
-            numberTranslateSH = numberTranslateSH + addingTranslateSH*.4;
+            numberTranslateSH = numberTranslateSH + addingTranslateSH*.7;
 
             numberRotateG = numberRotateG + addingRotateG;
-            numberTranslateG = numberTranslateG + addingTranslateG*.2;
+            numberTranslateG = numberTranslateG + addingTranslateG*.7;
 
             document.getElementById("iphone").style.transform = "translateY(" + numberTranslate +"px) rotate(" + numberRotate + "deg)";
 
