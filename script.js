@@ -26,24 +26,99 @@ $(function() {
     
 })(jQuery);
 
-$("#one").mouseenter(function(){
+$("#one").mouseover(function(){
     $("#leave2").css("right", "-400px");
     $("#leave2").css("transform", "rotate(0deg)");
     $("#leave3").css("left", "-130px");
     $("#leave4").css("right", "-100px");
 });
 
-$(".box").mouseenter(function(){
+$(".box").mouseover(function(){
     $(".box > h3").css("opacity", "1");
     $(".box > p").css("opacity", "1");
     $(".box > p").css("transform", "translateY(0px)");
     $("#hand").css("transform", "translateX(0) rotate(0)")
 })
-$("#two").mouseenter(function(){
+
+$("#two").mouseover(function(){
     $("#two > h3").css("opacity", "1");
-    $("#liane2").css("left", "-300px")
-})
-$("#three").mouseenter(function(){
+    $("#liane2").css("left", "-300px");
+    $("#mint").css("right", "-400px");
+    $("#iphone").css("opacity", "1");
+    $("#spotify").css("opacity", "1");
+    $("#shampoing").css("opacity", "1");
+    $("#gum").css("opacity", "1");
+
+    var lastScrollTop = 0;
+    var numberRotate = 20;
+    var addingRotate = .2;
+    var addingTranslate = 2;
+    var numberTranslate = -400;
+
+    var numberRotateS = -30;
+    var addingRotateS = 1;
+    var addingTranslateS = .8;
+    var numberTranslateS = -200;
+
+    var numberRotateSH = 50;
+    var addingRotateSH = .4;
+    var addingTranslateSH = 5;
+    var numberTranslateSH = 400;
+
+    var numberRotateG = -70;
+    var addingRotateG = .8;
+    var addingTranslateG = 1;
+    var numberTranslateG = 300;
+
+    window.addEventListener("scroll", function(){
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop){
+            numberRotate = numberRotate + addingRotate;
+            numberTranslate = numberTranslate + addingTranslate;
+
+            numberRotateS = numberRotateS + addingRotateS;
+            numberTranslateS = numberTranslateS + addingTranslateS;
+
+            numberRotateSH = numberRotateSH - addingRotateSH;
+            numberTranslateSH = numberTranslateSH - addingTranslateSH;
+
+            numberRotateG = numberRotateG - addingRotateG;
+            numberTranslateG = numberTranslateG - addingTranslateG;
+
+            document.getElementById("iphone").style.transform = "translateY(" + numberTranslate +"px) rotate(" + numberRotate + "deg)";
+
+            document.getElementById("spotify").style.transform = "translateY(" + numberTranslateS +"px) rotate(" + numberRotateS + "deg)";
+            
+            document.getElementById("shampoing").style.transform = "translateY(" + numberTranslateSH +"px) rotate(" + numberRotateSH + "deg)";
+            
+            document.getElementById("gum").style.transform = "translateY(" + numberTranslateG +"px) rotate(" + numberRotateG + "deg)";
+        } 
+        else {
+            numberRotate = numberRotate - addingRotate;
+            numberTranslate = numberTranslate - addingTranslate*.2;
+
+            numberRotateS = numberRotateS - addingRotateS;
+            numberTranslateS = numberTranslateS - addingTranslateS*.3;
+
+            numberRotateSH = numberRotateSH + addingRotateSH;
+            numberTranslateSH = numberTranslateSH + addingTranslateSH*.4;
+
+            numberRotateG = numberRotateG + addingRotateG;
+            numberTranslateG = numberTranslateG + addingTranslateG*.2;
+
+            document.getElementById("iphone").style.transform = "translateY(" + numberTranslate +"px) rotate(" + numberRotate + "deg)";
+
+            document.getElementById("spotify").style.transform = "translateY(" + numberTranslateS +"px) rotate(" + numberRotateS + "deg)";
+            
+            document.getElementById("shampoing").style.transform = "translateY(" + numberTranslateSH +"px) rotate(" + numberRotateSH + "deg)"; 
+
+            document.getElementById("gum").style.transform = "translateY(" + numberTranslateG +"px) rotate(" + numberRotateG + "deg)";
+        }
+        lastScrollTop = st;
+        }, false)
+});
+
+$("#three").mouseover(function(){
     $("#three > h3").css("opacity", "1");
     $('.img').css("opacity", "1");
 })

@@ -15,7 +15,9 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
+mark {
+    background-color: #a0e418;
+}
 .section {
     padding: 2em 0;
     height: 100vh;
@@ -107,11 +109,54 @@ h1 {
 
 
 #two h3 {
+    position: relative;
     text-align: center;
     font-size: 5em;
     font-family: "Permanent Marker";
     opacity: 0;
     transition: opacity 2s ease;
+}
+#iphone {
+    width: 10%;
+    transform: translateY(-400px) rotate(20deg);
+    position: absolute;
+    left: 100px!important;
+    z-index: -4;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#spotify {
+    width: 8%;
+    transform: translateY(-200px) rotate(-30deg);
+    position: absolute;
+    right: 100px!important;
+    z-index: -4;
+    -webkit-filter: drop-shadow(10px 10px 70px black);
+    filter: drop-shadow(10px 10px 70px black);
+    opacity: 0;
+    transition: opacity 2s ease;   
+}
+#shampoing {
+    width: 20%;
+    position: absolute;
+    transform: translateY(400px) rotate(50deg);
+    left: 400px!important;
+    z-index: -4;
+    -webkit-filter: drop-shadow(10px 10px 10px black);
+    filter: drop-shadow(10px 10px 10px black);
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+#gum {
+    width: 30%;
+    transform: translateY(300px) rotate(-70deg);
+    position: absolute;
+    right: 300px!important;
+    z-index: -4;
+    -webkit-filter: drop-shadow(10px 10px 40px black);
+    filter: drop-shadow(10px 10px 40px black);
+    opacity: 0;
+    transition: opacity 4s ease;   
 }
 #three {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
@@ -153,7 +198,7 @@ h1 {
     width: 91px;
     height: 99px;
     z-index: 2;
-    -webkit-filter: drop-shadow(10px 10px 70px black);
+    -webkit-filter: drop-shadow(10px 10px 10px black);
     filter: drop-shadow(10px 10px 10px black);
     transition: transform 1s ease-in-out;
           
@@ -253,4 +298,11 @@ h1 {
     left: -700px;
     top: 1400px;
     transition: left 2s ease;
+}
+#mint {
+    position: absolute;
+    width: 45%;
+    right: -800px;
+    top: 2500px;
+    transition: right 3s ease;
 }
