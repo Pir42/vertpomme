@@ -39,8 +39,11 @@ $(".box").mouseenter(function(){
     $(".box > p").css("transform", "translateY(0px)");
     $("#hand").css("transform", "translateX(0) rotate(0)")
 })
-
 $("#two").mouseenter(function(){
     $("#two > h3").css("opacity", "1");
+    $("#liane2").css("left", "-300px")
+})
+$("#three").mouseenter(function(){
+    $("#three > h3").css("opacity", "1");
     $('.img').css("opacity", "1");
 })
