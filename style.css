@@ -6,8 +6,6 @@
     font-style: normal;
 }
 
-
-
 body {
     font-family: 'Montserrat';
     background-color: #e5f9bd;
@@ -20,7 +18,6 @@ mark {
 }
 .section {
     padding: 2em 0;
-    height: 100vh;
 }
 
 h1 {
@@ -35,6 +32,7 @@ h1 {
 .introduce {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
     position: relative;
+    padding-bottom: 8em;
 }
 .introduce p {
     text-align: center;
@@ -120,9 +118,20 @@ h1 {
     opacity: 0;
     transition: opacity .4s ease;
 }
+#two p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    margin: auto;
+    font-size: 1.3em;
+    line-height: 1.9em;
+    opacity: 0;
+    transition: opacity .8s ease;
+    margin-bottom: 4em;
+}
 #iphone {
     width: 10%;
-    transform: translateY(-400px) rotate(20deg);
+    transform: translateY(-800px) rotate(20deg);
     position: absolute;
     left: 100px!important;
     z-index: -4;
@@ -131,7 +140,7 @@ h1 {
 }
 #spotify {
     width: 8%;
-    transform: translateY(-200px) rotate(-30deg);
+    transform: translateY(-600px) rotate(-30deg);
     position: absolute;
     right: 100px!important;
     z-index: -4;
@@ -141,7 +150,7 @@ h1 {
 #shampoing {
     width: 20%;
     position: absolute;
-    transform: translateY(400px) rotate(50deg);
+    transform: translateY(0px) rotate(50deg);
     left: 400px!important;
     z-index: -4;
     opacity: 0;
@@ -149,7 +158,7 @@ h1 {
 }
 #gum {
     width: 30%;
-    transform: translateY(300px) rotate(-70deg);
+    transform: translateY(-100px) rotate(-70deg);
     position: absolute;
     right: 300px!important;
     z-index: -4;
@@ -158,7 +167,7 @@ h1 {
 }
 #three {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
-    height: 150vh;
+    padding-bottom: 5em;
 }
 #three h3 {
     font-family: 'Poiret One';
@@ -189,6 +198,7 @@ h1 {
     position: relative;
     opacity: 0;
     transition: opacity 2s ease;
+    height: 743px;
 }
 #three .tab {
     background-image: url("img/magrittTab.png");
@@ -304,3 +314,48 @@ h1 {
     top: 800px;
     transition: right 3s ease;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #leave1, #leave2, #leave3, #leave4, #liane, #liane2, #hand, #mint {
+        display: none;
+    }
+    #one h3 {
+        opacity: 1;
+    }
+    #one p {
+        opacity: 1;
+        width: 70%;
+        font-size: 1.5em;
+        margin: auto;
+        transform: translateY(0px);
+    }
+    #two h3, #iphone, #shampoing, #spotify, #gum {
+        opacity: 1;
+    }
+    #three h3 {
+        opacity: 1;
+    }
+    #three .text p {
+        opacity: 1!important;
+    }
+    .text {
+        margin-bottom: 5em;
+    }
+    #three .img {
+        opacity: 1;
+    }
+    #three .flex {
+        display: block;
+    }
+    #three .flexbox {
+        width: 100%;
+    }
+  }

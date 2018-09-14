@@ -42,9 +42,10 @@ $(".box").mouseover(function(){
 
 var testing = 0;
 
-$("#one").mouseleave(function(){
+$("#two").mouseenter(function(){
 
     $("#two > h3").css("opacity", "1");
+    $("#two > p").css("opacity", "1");    
     $("#liane2").css("left", "-300px");
     $("#mint").css("right", "-400px");
     $("#iphone").css("opacity", "1");
@@ -59,22 +60,22 @@ $("#one").mouseleave(function(){
     var numberRotate = 20;
     var addingRotate = .2;
     var addingTranslate = 4;
-    var numberTranslate = -400;
+    var numberTranslate = -800;
 
     var numberRotateS = -30;
     var addingRotateS = 1;
     var addingTranslateS = .8;
-    var numberTranslateS = -200;
+    var numberTranslateS = -600;
 
     var numberRotateSH = 50;
     var addingRotateSH = .4;
     var addingTranslateSH = 5;
-    var numberTranslateSH = 400;
+    var numberTranslateSH = 0;
 
     var numberRotateG = -70;
     var addingRotateG = .8;
     var addingTranslateG = 1;
-    var numberTranslateG = 300;
+    var numberTranslateG = -100;
 
     testing = testing+1;
 
