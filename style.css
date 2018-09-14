@@ -337,7 +337,13 @@ h1 {
         margin: auto;
         transform: translateY(0px);
     }
+    #one .box {
+        height: auto;
+    }
     #two h3, #iphone, #shampoing, #spotify, #gum {
+        opacity: 1;
+    }
+    #two p {
         opacity: 1;
     }
     #three h3 {
