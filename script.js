@@ -59,7 +59,7 @@ $("#two").mouseover(function(){
 
     var numberRotate = 20;
     var addingRotate = .2;
-    var addingTranslate = 4;
+    var addingTranslate = 2;
     var numberTranslate = -800;
 
     var numberRotateS = -30;
@@ -128,6 +128,7 @@ $("#two").mouseover(function(){
         lastScrollTop = st;
         }, false)
 });
+
 
 $("#three").mouseover(function(){
     $("#three > h3").css("opacity", "1");
