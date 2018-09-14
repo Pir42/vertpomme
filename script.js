@@ -42,7 +42,7 @@ $(".box").mouseover(function(){
 
 var testing = 0;
 
-$("#two").mouseenter(function(){
+$("#two").mouseover(function(){
 
     $("#two > h3").css("opacity", "1");
     $("#two > p").css("opacity", "1");    
