@@ -42,7 +42,7 @@ $(".box").mouseover(function(){
 
 var testing = 0;
 
-$("#two").mouseon(function(){
+$("#two").mouseover(function(){
 
     $("#two > h3").css("opacity", "1");
     $("#liane2").css("left", "-300px");
