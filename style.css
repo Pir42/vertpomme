@@ -118,7 +118,7 @@ h1 {
     font-size: 5em;
     font-family: "Permanent Marker";
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity .4s ease;
 }
 #iphone {
     width: 10%;
@@ -136,7 +136,7 @@ h1 {
     right: 100px!important;
     z-index: -4;
     opacity: 0;
-    transition: opacity 2s ease;   
+    transition: opacity 1s ease;   
 }
 #shampoing {
     width: 20%;
@@ -145,7 +145,7 @@ h1 {
     left: 400px!important;
     z-index: -4;
     opacity: 0;
-    transition: opacity 3s ease;
+    transition: opacity 1s ease;
 }
 #gum {
     width: 30%;
@@ -154,7 +154,7 @@ h1 {
     right: 300px!important;
     z-index: -4;
     opacity: 0;
-    transition: opacity 4s ease;   
+    transition: opacity 1s ease;   
 }
 #three {
     background-image: url('img/noisetexture.png'), linear-gradient(180deg, #e5f9bd, #e5f9bd);
